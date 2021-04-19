@@ -68,7 +68,7 @@
 		<description>A small bin for trash. Too small to provide any meaningful reduction in a room's dirtiness, it at least makes a space feel more lived in.</description>
 		<graphicData>
 			<texPath>Things/Building/ED_Bin/ED_BinA</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.2,1.2)</drawSize>
 		</graphicData>
