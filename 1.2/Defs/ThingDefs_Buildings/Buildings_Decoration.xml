@@ -672,7 +672,7 @@
 	
 	<ThingDef ParentName="FurnitureBase">
 		<defName>ED_DogHouse</defName>
-		<thingClass>Building_Bed</thingClass>
+		
 		<label>dog house</label>
 		<description>A small house typically used for pets, like dogs, to have a space to shelter in whilst outdoors.</description>
 		<rotatable>false</rotatable>
@@ -690,29 +690,16 @@
 			<li>Woody</li>	
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
-		<building>
-			<bed_humanlike>false</bed_humanlike>
-			<bed_maxBodySize>0.87</bed_maxBodySize>
-			<bed_showSleeperBody>false</bed_showSleeperBody>
-			<bed_healPerDay>4</bed_healPerDay>
-		</building>
+		
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<WorkToBuild>250</WorkToBuild>
 			<Mass>5</Mass>
-			<BedRestEffectiveness>0.93</BedRestEffectiveness>
-			<Comfort>0.60</Comfort>
-			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
-			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+			
 		</statBases>
-		<comps>
-			<li Class="CompProperties_AssignableToPawn">
-				<drawAssignmentOverlay>false</drawAssignmentOverlay>
-				<compClass>CompAssignableToPawn_Bed</compClass>
-			</li>
-		</comps>
+		
 		
 	</ThingDef>
 	
