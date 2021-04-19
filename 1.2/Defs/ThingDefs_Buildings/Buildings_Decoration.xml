@@ -418,6 +418,7 @@
 			<isEdifice>false</isEdifice>
 			<canPlaceOverWall>true</canPlaceOverWall>
 		</building>
+		<clearBuildingArea>false</clearBuildingArea>
 		<uiIconPath>UI/ED_SmallPlant</uiIconPath>
 		<passability>Standable</passability>
 		<pathCost>8</pathCost>
