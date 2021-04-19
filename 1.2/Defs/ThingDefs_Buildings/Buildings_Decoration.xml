@@ -264,9 +264,7 @@
 		<thingClass>Building</thingClass>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<clearBuildingArea>false</clearBuildingArea>
-		<thingCategories>
-			<li>BuildingsFurniture</li>
-		</thingCategories>
+		
 		<description>A small, cute plush animal in the shape of a stylised bear/cat/dog/bunny. Typically a toy for children, but adults can find them comforting too.</description>
 		<graphicData>
 			<texPath>Things/Building/ED_Plushie/ED_PlushieA</texPath>
@@ -315,9 +313,7 @@
 		<thingClass>Building</thingClass>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<clearBuildingArea>false</clearBuildingArea>
-		<thingCategories>
-			<li>BuildingsFurniture</li>
-		</thingCategories>
+		
 		<description>A small, decorative vase is a great way to personalise a room. Just try not to break it!</description>
 		<graphicData>
 			<texPath>Things/Building/ED_Vase/ED_VaseA</texPath>
@@ -751,9 +747,7 @@
 		<thingClass>Building</thingClass>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<clearBuildingArea>false</clearBuildingArea>
-		<thingCategories>
-			<li>BuildingsFurniture</li>
-		</thingCategories>
+		
 		<description>A single trophy, allowing you to show off your achievements - real or imagined.</description>
 		<graphicData>
 			<texPath>Things/Building/ED_Trophy</texPath>
