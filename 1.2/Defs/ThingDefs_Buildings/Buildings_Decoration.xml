@@ -1,0 +1,828 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ED_Doormat</defName>
+		<label>doormat</label>
+		<description>A decorative mat, manufactured from sturdy materials, that adds a nice, welcoming touch to any room.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_DoorMat/ED_DoorMatA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>3</costStuffCount>		
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<isEdifice>false</isEdifice>
+		</building>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/ED_DoorMat/ED_DoorMatA</li>
+					<li>Things/Building/ED_DoorMat/ED_DoorMatB</li>
+
+				</randomGraphics>
+			</li>
+		</comps>		
+		<statBases>
+			<Beauty>1</Beauty>
+			<Flammability>1.0</Flammability>
+			<MarketValue>5</MarketValue>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToBuild>50</WorkToBuild>
+			<Mass>0.25</Mass>
+		</statBases>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<clearBuildingArea>false</clearBuildingArea>
+		<designationCategory>Furniture</designationCategory>
+
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<passability>Standable</passability>
+		<pathCost>0</pathCost>
+		<repairEffect>Repair</repairEffect>
+		<rotatable>true</rotatable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<tickerType>Never</tickerType>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="FurnitureBase">
+		<defName>ED_Bin</defName>
+		<label>bin</label>
+		<description>A small bin for trash. Too small to provide any meaningful reduction in a room's dirtiness, it at least makes a space feel more lived in.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_Bin/ED_BinA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<WorkToBuild>50</WorkToBuild>
+			<Mass>0.5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>			
+		</stuffCategories>
+		<designationCategory>Furniture</designationCategory>
+		<costStuffCount>1</costStuffCount>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/ED_Bin/ED_BinA</li>
+					<li>Things/Building/ED_Bin/ED_BinB</li>
+				</randomGraphics>
+			</li>
+		</comps>		
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ED_SmallPhotos</defName>
+		<label>small photos</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A set of small photo frames that provides a personal touch to any space.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_SmallPhotos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>3</costStuffCount>	
+		<rotatable>false</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<WorkToBuild>20</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>1</Beauty>
+			<Mass>0.03</Mass>	  
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ED_Candles</defName>
+		<label>candles</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>Decorative candles that give a room a warm, comfortable atmosphere. A great way to personalise a room.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_Candles/ED_CandlesA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>			
+		</graphicData>
+		<costList>
+			<Chemfuel>5</Chemfuel>
+		</costList>
+		<rotatable>false</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>		
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<WorkToBuild>75</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.2</Mass>	  
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>0.5</heatPerSecond>
+				<heatPushMaxTemperature>5</heatPushMaxTemperature>
+			</li>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/ED_Candles/ED_CandlesA</li>
+					<li>Things/Building/ED_Candles/ED_CandlesB</li>
+				</randomGraphics>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+
+	</ThingDef>
+
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>ED_PetBowl</defName>
+		<label>pet bowl</label>
+		<description>A small metal dish typically used for feeding pet animals such as cats or dogs. Can be used to store kibble.</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/ED_PetBowl</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>		
+		<pathCost>5</pathCost>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Mass>1</Mass>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Kibble</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Kibble</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc12</designationHotKey>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>ED_Plushie</defName>
+		<label>plushie</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A small, cute plush animal in the shape of a stylised bear/cat/dog/bunny. Typically a toy for children, but adults can find them comforting too.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_Plushie/ED_PlushieA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>3</costStuffCount>	
+		<rotatable>false</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<WorkToBuild>150</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>1</Beauty>
+			<Mass>0.03</Mass>	  
+		</statBases>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/ED_Plushie/ED_PlushieA</li>
+					<li>Things/Building/ED_Plushie/ED_PlushieB</li>
+					<li>Things/Building/ED_Plushie/ED_PlushieC</li>
+					<li>Things/Building/ED_Plushie/ED_PlushieD</li>
+
+				</randomGraphics>
+			</li>
+		</comps>		
+	</ThingDef>
+
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>ED_Vase</defName>
+		<label>vase</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A small, decorative vase is a great way to personalise a room. Just try not to break it!</description>
+		<graphicData>
+			<texPath>Things/Building/ED_Vase/ED_VaseA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>	
+		<rotatable>false</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>2</Beauty>
+			<Mass>1</Mass>	  
+		</statBases>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/ED_Vase/ED_VaseA</li>
+					<li>Things/Building/ED_Vase/ED_VaseB</li>					
+				</randomGraphics>
+			</li>
+		</comps>		
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ED_Laptop</defName>
+		<label>laptop</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A small, personal computer of a brand favoured by artists across the human diaspora. Whilst not functionally useful to a rimworld colony, it is something of a status symbol to own one.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_Laptop</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>1</Mass>	  
+		</statBases>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+
+	</ThingDef>
+
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>ED_SmallPlant</defName>
+		<label>small plant pot</label>
+		<description>A small pot containing a fake, plastic succulent/flowering plant.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_SmallPlant/ED_SmallPlantA</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Mass>0.5</Mass>
+			<Beauty>1</Beauty>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>	
+			<li>Stony</li>	
+			<li>Woody</li>				
+		</stuffCategories>
+		<designationCategory>Furniture</designationCategory>
+		<costStuffCount>5</costStuffCount>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/ED_SmallPlant/ED_SmallPlantA</li>
+					<li>Things/Building/ED_SmallPlant/ED_SmallPlantB</li>
+					<li>Things/Building/ED_SmallPlant/ED_SmallPlantC</li>
+				</randomGraphics>
+			</li>
+		</comps>		
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ED_Paper</defName>
+		<label>paper</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A single printed document. If this is homework, it is probably long overdue.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_Paper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>				
+		</stuffCategories>		
+		<costStuffCount>1</costStuffCount>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<WorkToBuild>5</WorkToBuild>
+			<Flammability>2</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.01</Mass>	  
+		</statBases>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ED_Papers</defName>
+		<label>papers</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A set of printed documents - probably nothing important.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_StackofPapers</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>				
+		</stuffCategories>		
+		<costStuffCount>1</costStuffCount>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<WorkToBuild>5</WorkToBuild>
+			<Flammability>2</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.01</Mass>	  
+		</statBases>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ED_Book</defName>
+		<label>book</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A book left out is a great way to make yourself seem sophisticated, you just have to hope that no one asks you what it is about.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_Book/ED_BookA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>				
+		</stuffCategories>		
+		<costStuffCount>1</costStuffCount>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<WorkToBuild>25</WorkToBuild>
+			<Flammability>2</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.05</Mass>	  
+		</statBases>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/ED_Book/ED_BookA</li>
+					<li>Things/Building/ED_Book/ED_BookB</li>
+				</randomGraphics>
+			</li>
+		</comps>	
+
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ED_PileofBooks</defName>
+		<label>pile of books</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A small pile of books. The natural way for books to assemble when not placed on a shelf.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_PileofBooks</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>				
+		</stuffCategories>		
+		<costStuffCount>1</costStuffCount>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToBuild>40</WorkToBuild>
+			<Flammability>2</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.1</Mass>	  
+		</statBases>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+
+
+	</ThingDef>
+
+	<ThingDef ParentName="FurnitureBase">
+		<defName>ED_CatTower</defName>
+		<thingClass>Building_Bed</thingClass>
+		<label>cat tower</label>
+		<description>A cat tower/tree is a great way to tailor a space for your tree-dwelling cats. Remember: Catify to Satisfy.</description>
+		<rotatable>false</rotatable>
+		<fillPercent>0.15</fillPercent>
+		<pathCost>14</pathCost>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<graphicData>
+			<texPath>Things/Building/ED_CatTower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+		
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_maxBodySize>0.3</bed_maxBodySize>
+			<bed_showSleeperBody>true</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>180</WorkToBuild>
+			<Mass>3</Mass>
+			<BedRestEffectiveness>0.93</BedRestEffectiveness>
+			<Comfort>0.60</Comfort>
+			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>CompAssignableToPawn_Bed</compClass>
+			</li>
+		</comps>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="FurnitureBase">
+		<defName>ED_DogHouse</defName>
+		<thingClass>Building_Bed</thingClass>
+		<label>dog house</label>
+		<description>A small house typically used for pets, like dogs, to have a space to shelter in whilst outdoors.</description>
+		<rotatable>false</rotatable>
+		<fillPercent>0.15</fillPercent>
+		<pathCost>14</pathCost>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<graphicData>
+			<texPath>Things/Building/ED_DogHouse</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+		
+		<stuffCategories>
+			<li>Metallic</li>	
+			<li>Stony</li>	
+			<li>Woody</li>	
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_maxBodySize>0.87</bed_maxBodySize>
+			<bed_showSleeperBody>false</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>250</WorkToBuild>
+			<Mass>5</Mass>
+			<BedRestEffectiveness>0.93</BedRestEffectiveness>
+			<Comfort>0.60</Comfort>
+			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>CompAssignableToPawn_Bed</compClass>
+			</li>
+		</comps>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ED_Pillow</defName>
+		<label>pillow</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>Pillows that are used as a decorative accent for rooms, because you can never be too comfortable.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_Pillow/ED_PillowA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>				
+		</stuffCategories>		
+		<costStuffCount>3</costStuffCount>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<WorkToBuild>40</WorkToBuild>
+			<Flammability>2</Flammability>
+			<Beauty>1</Beauty>
+			<Mass>0.1</Mass>	  
+		</statBases>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/ED_Pillow/ED_PillowA</li>
+					<li>Things/Building/ED_Pillow/ED_PillowB</li>
+					<li>Things/Building/ED_Pillow/ED_PillowC</li>
+				</randomGraphics>
+			</li>
+		</comps>	
+
+	</ThingDef>
+	
+	<ThingDef ParentName="ArtableFurnitureRegardlessOfQualityBase">
+		<defName>ED_Trophy</defName>
+		<label>trophy</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A single trophy, allowing you to show off your achievements - real or imagined.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_Trophy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>			
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>	
+		<rotatable>false</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>2</Beauty>
+			<Mass>1</Mass>	  
+		</statBases>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ED_Clock</defName>
+		<label>bedside clock</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A bedside clock typically used to make sure people wake up in the mornings. This one is non-functional, probably from being thrown across the room once too often.</description>
+		<graphicData>
+			<texPath>Things/Building/ED_Clock</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+						
+		</stuffCategories>		
+		<costStuffCount>1</costStuffCount>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>2</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.05</Mass>	  
+		</statBases>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>ED_SimpleDecorations</li>
+		</researchPrerequisites>
+		
+	</ThingDef>
+
+</Defs>
