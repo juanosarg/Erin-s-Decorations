@@ -70,6 +70,7 @@
 			<texPath>Things/Building/ED_Bin/ED_BinA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.2,1.2)</drawSize>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -112,6 +113,7 @@
 		<graphicData>
 			<texPath>Things/Building/ED_SmallPhotos</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
 		</graphicData>
 		<stuffCategories>
 			<li>Woody</li>
@@ -153,7 +155,8 @@
 		<description>Decorative candles that give a room a warm, comfortable atmosphere. A great way to personalise a room.</description>
 		<graphicData>
 			<texPath>Things/Building/ED_Candles/ED_CandlesA</texPath>
-			<graphicClass>Graphic_Single</graphicClass>			
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>			
 		</graphicData>
 		<costList>
 			<Chemfuel>5</Chemfuel>
@@ -269,6 +272,7 @@
 		<graphicData>
 			<texPath>Things/Building/ED_Plushie/ED_PlushieA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
 		</graphicData>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -318,6 +322,7 @@
 		<graphicData>
 			<texPath>Things/Building/ED_Vase/ED_VaseA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
 		</graphicData>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -366,6 +371,7 @@
 		<graphicData>
 			<texPath>Things/Building/ED_Laptop</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
 		</graphicData>
 		<costList>
 			<Steel>1</Steel>
@@ -385,6 +391,7 @@
 			<Mass>1</Mass>	  
 		</statBases>
 		<designationCategory>Furniture</designationCategory>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		<researchPrerequisites>
 			<li>ED_SimpleDecorations</li>
 		</researchPrerequisites>
@@ -399,10 +406,15 @@
 			<texPath>Things/Building/ED_SmallPlant/ED_SmallPlantA</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.3,1.3)</drawSize>
 		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<fillPercent>0.20</fillPercent>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>
+		<fillPercent>0.15</fillPercent>
 		<statBases>
 			<MaxHitPoints>10</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>
@@ -445,6 +457,7 @@
 		<graphicData>
 			<texPath>Things/Building/ED_Paper</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<stuffCategories>
 			<li>Woody</li>				
@@ -484,6 +497,7 @@
 		<graphicData>
 			<texPath>Things/Building/ED_StackofPapers</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<stuffCategories>
 			<li>Woody</li>				
@@ -523,6 +537,7 @@
 		<graphicData>
 			<texPath>Things/Building/ED_Book/ED_BookA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<stuffCategories>
 			<li>Woody</li>				
@@ -570,6 +585,7 @@
 		<graphicData>
 			<texPath>Things/Building/ED_PileofBooks</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<stuffCategories>
 			<li>Woody</li>				
@@ -610,7 +626,6 @@
 		<graphicData>
 			<texPath>Things/Building/ED_CatTower</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
 		</graphicData>
 		
 		<stuffCategories>
@@ -657,9 +672,7 @@
 		<graphicData>
 			<texPath>Things/Building/ED_DogHouse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
 		</graphicData>
-		
 		<stuffCategories>
 			<li>Metallic</li>	
 			<li>Stony</li>	
@@ -752,6 +765,7 @@
 		<graphicData>
 			<texPath>Things/Building/ED_Trophy</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
 		</graphicData>
 		<stuffCategories>
 			<li>Metallic</li>			
@@ -792,6 +806,7 @@
 		<graphicData>
 			<texPath>Things/Building/ED_Clock</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
 		</graphicData>
 		<stuffCategories>
 			<li>Metallic</li>
