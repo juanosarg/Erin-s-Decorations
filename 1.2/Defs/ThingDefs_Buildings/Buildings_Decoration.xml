@@ -72,6 +72,7 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.2,1.2)</drawSize>
 		</graphicData>
+		<uiIconPath>UI/ED_Bin</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.20</fillPercent>
@@ -110,6 +111,7 @@
 			<li>BuildingsFurniture</li>
 		</thingCategories>
 		<description>A set of small photo frames that provides a personal touch to any space.</description>
+		<uiIconPath>UI/ED_SmallPhotos</uiIconPath>
 		<graphicData>
 			<texPath>Things/Building/ED_SmallPhotos</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -152,6 +154,7 @@
 		<thingCategories>
 			<li>BuildingsFurniture</li>
 		</thingCategories>
+		<uiIconPath>UI/ED_Candles</uiIconPath>
 		<description>Decorative candles that give a room a warm, comfortable atmosphere. A great way to personalise a room.</description>
 		<graphicData>
 			<texPath>Things/Building/ED_Candles/ED_CandlesA</texPath>
@@ -278,6 +281,7 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
+		<uiIconPath>UI/ED_Plushie</uiIconPath>
 		<costStuffCount>3</costStuffCount>	
 		<rotatable>false</rotatable>
 		<building>
@@ -330,6 +334,7 @@
 		</stuffCategories>
 		<costStuffCount>5</costStuffCount>	
 		<rotatable>false</rotatable>
+		<uiIconPath>UI/ED_Vase</uiIconPath>
 		<building>
 			<isEdifice>false</isEdifice>
 			<canPlaceOverWall>true</canPlaceOverWall>
@@ -376,6 +381,7 @@
 		<costList>
 			<Steel>1</Steel>
 		</costList>
+		<uiIconPath>UI/ED_Laptop</uiIconPath>
 		<building>
 			<isEdifice>false</isEdifice>
 			<canPlaceOverWall>true</canPlaceOverWall>
@@ -412,6 +418,7 @@
 			<isEdifice>false</isEdifice>
 			<canPlaceOverWall>true</canPlaceOverWall>
 		</building>
+		<uiIconPath>UI/ED_SmallPlant</uiIconPath>
 		<passability>Standable</passability>
 		<pathCost>8</pathCost>
 		<fillPercent>0.15</fillPercent>
@@ -459,6 +466,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<uiIconPath>UI/ED_Paper</uiIconPath>
 		<stuffCategories>
 			<li>Woody</li>				
 		</stuffCategories>		
@@ -493,6 +501,7 @@
 		<thingCategories>
 			<li>BuildingsFurniture</li>
 		</thingCategories>
+		<uiIconPath>UI/ED_Papers</uiIconPath>
 		<description>A set of printed documents - probably nothing important.</description>
 		<graphicData>
 			<texPath>Things/Building/ED_StackofPapers</texPath>
@@ -533,6 +542,7 @@
 		<thingCategories>
 			<li>BuildingsFurniture</li>
 		</thingCategories>
+		<uiIconPath>UI/ED_Book</uiIconPath>
 		<description>A book left out is a great way to make yourself seem sophisticated, you just have to hope that no one asks you what it is about.</description>
 		<graphicData>
 			<texPath>Things/Building/ED_Book/ED_BookA</texPath>
@@ -581,6 +591,7 @@
 		<thingCategories>
 			<li>BuildingsFurniture</li>
 		</thingCategories>
+		<uiIconPath>UI/ED_PileofBooks</uiIconPath>
 		<description>A small pile of books. The natural way for books to assemble when not placed on a shelf.</description>
 		<graphicData>
 			<texPath>Things/Building/ED_PileofBooks</texPath>
@@ -760,7 +771,7 @@
 		<thingClass>Building</thingClass>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<clearBuildingArea>false</clearBuildingArea>
-		
+		<uiIconPath>UI/ED_Trophy</uiIconPath>
 		<description>A single trophy, allowing you to show off your achievements - real or imagined.</description>
 		<graphicData>
 			<texPath>Things/Building/ED_Trophy</texPath>
@@ -802,6 +813,7 @@
 		<thingCategories>
 			<li>BuildingsFurniture</li>
 		</thingCategories>
+		<uiIconPath>UI/ED_Clock</uiIconPath>
 		<description>A bedside clock typically used to make sure people wake up in the mornings. This one is non-functional, probably from being thrown across the room once too often.</description>
 		<graphicData>
 			<texPath>Things/Building/ED_Clock</texPath>
