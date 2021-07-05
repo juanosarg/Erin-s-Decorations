@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============================== Tier 1: pre-electricity ===================================-->
+
+  
+
+
+  <ResearchProjectDef>
+    <defName>ED_SimpleDecorations</defName>
+    <label>simple decorations</label>
+    <description>Create simple decorative items to subtly increase the beauty of your rooms.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    
+  </ResearchProjectDef>
+
+ 
+
+</Defs>

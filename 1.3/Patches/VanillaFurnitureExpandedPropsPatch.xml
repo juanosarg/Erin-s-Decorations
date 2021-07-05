@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Props and Decor</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_Doormat"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_Bin"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_SmallPhotos"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_Candles"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_PetBowl"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_Plushie"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_Vase"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_Laptop"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_SmallPlant"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_Paper"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_Papers"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_Book"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_PileofBooks"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="ED_CatTower"]</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="ED_DogHouse"]</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_Pillow"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_Trophy"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="ED_Clock"]/designationCategory</xpath>
+					<value>
+						<designationCategory>PropsandDecor</designationCategory>
+
+					</value>
+				</li>
+
+				
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
